@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>Simple Survey Form</title>
+    </head>
+    <body>
+        <div class="container-bg">
+        <div class="container">
+            <header>
+                <h1>freeCodeCamp Survey Form</h1>
+                <p>Thank you for taking the time to help us improve the platform</p>
+            </header>
+            <main>
+                <form>
+                        <p>
+                            <label for="name" method="POST">
+                                <span>Name</span><br/>
+                                <input type="text" id="name" />
+                            </label>
+                        </p>
+                        <p>
+                            <label for="email">
+                                <span>Email</span><br/>
+                                <input type="email" id="email" />
+                            </label>
+                        </p>
+                        <p>
+                            <label for="age">
+                                <span>Age</span><br/>
+                                <input type="number" id="age" />
+                            </label>
+                        </p>
+                        <p>
+                            <label for="role">
+                                <span>Which option best describes your current role?</span><br/>
+                                <select id="role">
+                                    <option>Student</option>
+                                    <option>Full Time Job</option>
+                                    <option>Prefer not to say</option>
+                                    <option>Other</option>
+                                </select>
+                            </label>
+                        </p>
+                        <p>
+                            <span>Would you recommend freeCodeCamp to a friend?</span><br/>
+                            <label><input type="radio" value="definitely" id="definitely" name="user-recommend" />Definitely</label><br />
+                            <label><input type="radio" value="maybe" id="maybe" name="user-recommend" />Maybe</label><br />
+                            <label><input type="radio" value="not-sure" id="not-sure" name="user-recommend" />Not sure</label><br />
+                        </p>
+                        <p>
+                            <span>What would you like to see improved?</span><br />
+                            <label><input type="checkbox" />Front-end Projects</label><br />
+                            <label><input type="checkbox" />Back-end Projects</label><br />
+                            <label><input type="checkbox" />Data Visualization</label><br />
+                            <label><input type="checkbox" />Challenges</label><br />
+                            <label><input type="checkbox" />Open Source Community</label><br />
+                            <label><input type="checkbox" />Gitter help rooms</label><br />
+                            <label><input type="checkbox" />Videos</label><br />
+                            <label><input type="checkbox" />City Meetups</label><br />
+                            <label><input type="checkbox" />Wiki</label><br />
+                            <label><input type="checkbox" />Forum</label><br />
+                            <label><input type="checkbox" />Additional Courses</label><br />
+                        </p>
+                        <p>
+                            <label>
+                                <span>Any comments or suggestions?</span><br />
+                                <textarea></textarea>
+                            </label>
+                        </p>
+                        <p class="submit">
+                            <button type="submit">Submit</button>
+                        </p>
+                </form>
+            </main>
+        </div>
+    </div>
+    </body>
+</html>

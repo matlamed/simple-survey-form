@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    word-wrap: break-word;
+}
+
+.container{
+    font-family: 'Alata', sans-serif;
+    display: grid;
+    grid-template-areas: ". header ." ". main ." ". footer .";
+    grid-template-columns: 30px auto 30px;
+    grid-template-rows: 20vh minmax(100vh,100%) 20vh;
+    row-gap: 4vh;
+    background-color: rgba(00,23,56,0.8);
+    justify-items: center;
+    align-items: center;
+}
+
+.container-bg{
+    background-image: url('collaboration.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    z-index: -1;
+}
+
+header{
+    grid-area: header;
+    color: #fff;
+    text-align: center;
+}
+
+main{
+    grid-area: main;
+    background-color: rgba(00,23,56,0.9);
+    color: #fff;
+}
+
+main form{
+    padding: 20px;
+    border-radius: 10px;
+}
+
+main form p{
+    margin-bottom: 20px;
+}
+
+main form p span{
+    font-size: 20px;
+}
+
+main form p input[type="text"],
+main form p input[type="email"],
+main form p input[type="number"],
+main form p select,
+main form p textarea{
+    width: 90%;
+    padding: 10px;
+}
+
+main form .submit{
+    text-align: center;
+}
+
+main form p button{
+    cursor: pointer;
+    width: 80%;
+    padding: 10px;
+}
+
+footer{
+    grid-area: footer;
+}
